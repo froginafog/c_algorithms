@@ -182,10 +182,10 @@ int main()
 }
 
 /*
-node_push_back() is executed.
+node_push_back() is iterated over.
 list: 0 10 20 30 40 50 60 70 80 90 100 
 reverse_linked_list() is executed
 list: 100 90 80 70 60 50 40 30 20 10 0 
-node_push_print() is executed.
-list: 0 10 20 30 40 50 60 70 80 90 100 90 80 70 60 50 40 30 20 10 0
+node_push_front() is iterated over.
+list: 0 10 20 30 40 50 60 70 80 90 100 90 80 70 60 50 40 30 20 10 0 
 */

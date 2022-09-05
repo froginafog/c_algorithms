@@ -11,55 +11,53 @@ int main()
 	int j;
 	int num_items = sizeof(a)/sizeof(a[0]);
 
-    printf("a = ");
-    for(int k = 0; k < num_items; k++)
-    {
-        printf("%6d", a[k]);
-    }
-    printf("\n\n------------------------------------------------\n\n");
+   	printf("a = ");
+	for(int k = 0; k < num_items; k++)
+	{
+		printf("%6d", a[k]);
+	}
+    	printf("\n\n------------------------------------------------\n\n");
 
 	for(i = 1; i < num_items; i++)
 	{
-        printf("i = %d:\n", i);
+        	printf("i = %d:\n", i);
 		j = i;
 		while(j > 0 && a[j-1] > a[j])
 		{
-            //--------------------------------------------
-            printf("a = ");
-            for(int k = 0; k < num_items; k++)
-            {
-                if(k == j)
-                {
-                    printf(" <-> %d", a[k]);
-                }
-                else
-                {
-                    printf("%6d", a[k]);
-                }
-            }
-            printf("\n");
-            //--------------------------------------------
-            swap(&a[j], &a[j-1]);
-            //printf("swap(%d,%d)\n", a[j], a[j-1]);
-            printf("a = ");
-            for(int k = 0; k < num_items; k++)
-            {
-                printf("%6d", a[k]);
-            }
-            printf("\n");
-            j--;
-            //--------------------------------------------
+            		//--------------------------------------------
+            		printf("a = ");
+            		for(int k = 0; k < num_items; k++)
+            		{
+                		if(k == j)
+                		{
+                    			printf(" <-> %d", a[k]);
+                		}
+                		else
+                		{
+                    			printf("%6d", a[k]);
+                		}
+            		}
+           		printf("\n");
+            		//--------------------------------------------
+            		swap(&a[j], &a[j-1]);
+            		printf("a = ");
+            		for(int k = 0; k < num_items; k++)
+            		{
+                		printf("%6d", a[k]);
+            		}
+            		printf("\n");
+            		j--;
+            		//--------------------------------------------
 		}
 		printf("\n------------------------------------------------\n\n");
 	}
 
-    printf("a = ");
-    for(int k = 0; k < num_items; k++)
-    {
-
-        printf("%6d", a[k]);
-    }
-    printf("\n");
+    	printf("a = ");
+    	for(int k = 0; k < num_items; k++)
+    	{
+		printf("%6d", a[k]);
+    	}
+    	printf("\n");
 }
 
 void swap(int * n1, int * n2)

@@ -3,7 +3,6 @@
 
 void swap(int * n1, int * n2);
 
-//compare each ith element with the (i-1)th element
 int main()
 {
 	int a[] = {5, 3, 6, 1, 4, 2};
